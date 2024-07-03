@@ -15,7 +15,7 @@
     onMount(() => {
         const smallerScreen = window.innerWidth < 768;
 
-        gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
+        gsap.registerPlugin(ScrollTrigger,CSSRulePlugin);
 
         const tl = gsap.timeline({ paused: true });
         let path = document.querySelector(".overlay path");
@@ -24,12 +24,6 @@
         gsap.set(spanBefore, { background: "rgb(59,130,246)" });
         gsap.set(".menu", { visibility: "hidden" });
        
-
-
-       
-
-        
-
         function revealMenu() {
             revealMenuItems();
 
